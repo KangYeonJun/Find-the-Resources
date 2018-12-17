@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="MainGame">
+      <UniqueIdentifier>{97ee3892-ab20-4c3b-8594-8b3b5b8d17ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{8ff88853-a11d-48d7-8d0f-6040804cb308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\InputManager">
+      <UniqueIdentifier>{fa635ef2-b604-4caa-a777-d424e7d41309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{7c8cd767-3f1e-4324-bcc9-62679653926a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SceneManager">
+      <UniqueIdentifier>{4bca0da7-bf19-49ee-957d-f42580562541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{44f8c831-7e39-4bf6-8ed8-2ebda78ce508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Ingame">
+      <UniqueIdentifier>{25038bc7-3ed6-48e2-a3bf-896c5ae6db76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\ImageManager">
+      <UniqueIdentifier>{04710816-203f-4937-8369-a68188d9b97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{69420e6f-5e75-4130-8621-661602a83457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture\MultiTexture">
+      <UniqueIdentifier>{b4b754f1-d7d7-47ec-8a7f-43b24274bfcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture\SingleTexture">
+      <UniqueIdentifier>{5117b1c2-0f56-4ef1-a487-0c43f828cd2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{8dc3badc-c0d4-4010-9edd-1c45731c5626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Loading">
+      <UniqueIdentifier>{7ca4d9e8-3784-42dc-a1c3-459d71b4afe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{0b81b1b7-3196-4510-8dc2-f9b41cee12c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Player">
+      <UniqueIdentifier>{3e290ef2-40a8-4305-965a-d8d4b79e968c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{f80128c8-2b57-48c9-91df-0d9439306ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\BulletManager">
+      <UniqueIdentifier>{e11e6075-e52f-4a16-ba28-0999ee96a7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Bullet">
+      <UniqueIdentifier>{0fc0ba93-c857-4b32-a4d9-a97543bff865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Title">
+      <UniqueIdentifier>{a63e393f-b487-453f-8522-07cc16ebd4b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Button">
+      <UniqueIdentifier>{e868d407-3340-4a60-be08-cb8e9e8c2cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Function">
+      <UniqueIdentifier>{60ce72a7-0482-4c27-8996-0298f7a30fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Function\Collision">
+      <UniqueIdentifier>{c4ca68a6-f5e5-44fb-8730-d8f7e9468498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Enemy">
+      <UniqueIdentifier>{9c671d29-7c7e-4351-9c80-3cc64e4c28d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\EnemyManager">
+      <UniqueIdentifier>{54dfef66-432e-4e3c-b275-04fda34ac0cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMainGame.cpp">
+      <Filter>MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CInputManager.cpp">
+      <Filter>Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneManager.cpp">
+      <Filter>Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CIngame.cpp">
+      <Filter>Scene\Ingame</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageManager.cpp">
+      <Filter>Manager\ImageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CMultiTexture.cpp">
+      <Filter>Texture\MultiTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="CSingleTexture.cpp">
+      <Filter>Texture\SingleTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="CTexture.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyProject.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoading.cpp">
+      <Filter>Scene\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="CCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CBulletManager.cpp">
+      <Filter>Manager\BulletManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CBullet.cpp">
+      <Filter>Object\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <Filter>Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CObj.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CButton.cpp">
+      <Filter>Object\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollision.cpp">
+      <Filter>Function\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CEnemy.cpp">
+      <Filter>Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="CEnemyManager.cpp">
+      <Filter>Manager\EnemyManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMainGame.h">
+      <Filter>MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CInputManager.h">
+      <Filter>Manager\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneManager.h">
+      <Filter>Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CIngame.h">
+      <Filter>Scene\Ingame</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CImageManager.h">
+      <Filter>Manager\ImageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CMultiTexture.h">
+      <Filter>Texture\MultiTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="CSingleTexture.h">
+      <Filter>Texture\SingleTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="CTexture.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoading.h">
+      <Filter>Scene\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="CBulletManager.h">
+      <Filter>Manager\BulletManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CBullet.h">
+      <Filter>Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitle.h">
+      <Filter>Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CObj.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CButton.h">
+      <Filter>Object\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollision.h">
+      <Filter>Function\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CEnemy.h">
+      <Filter>Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="CEnemyManager.h">
+      <Filter>Manager\EnemyManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="EmptyProject.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
