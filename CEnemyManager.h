@@ -5,6 +5,7 @@ class CEnemyManager : public CSingleton<CEnemyManager>
 {
 public:
 	vector<CEnemy*> vEne;
+	vector<CEnemy*>::iterator iter;
 
 public:
 	virtual void Update();

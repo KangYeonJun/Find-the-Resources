@@ -32,13 +32,21 @@ void CEnemyManager::Update()
 
 void CEnemyManager::Render()
 {
-	for (auto it : vEne)
+	for (auto iter : vEne)
 	{
-		it->Render();
+		iter->Render();
 	}
 }
 
 void CEnemyManager::Destroy()
 {
-	vEne.pop_back();
+	for (iter = vEne.begin(); iter != vEne.end();)
+	{
+		if ((*iter)->GetDie())
+		{
+			iter = vEne.erase(iter);
+		}
+		else
+			iter++;
+	}
 }

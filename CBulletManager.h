@@ -5,6 +5,7 @@ class CBulletManager : public CSingleton<CBulletManager>
 {
 public:
 	vector<CBullet*> vBullet;
+	vector<CBullet*>::iterator iter;
 
 public:
 	CBulletManager();
@@ -14,7 +15,6 @@ public:
 	void Update();
 	void Render();
 	void Destroy();
-	
 };
 
-#define BULLETMANAGER CBulletManager::GetInstance()
+#define BULLET CBulletManager::GetInstance()

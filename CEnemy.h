@@ -3,8 +3,11 @@
 class CEnemy
 {
 private:
-	int m_iX, m_iY;
+	FRAME m_fAnim;
 	RECT rc;
+	
+	int m_iX, m_iY;
+	bool isDie;
 
 public:
 	CEnemy();
@@ -18,5 +21,7 @@ public:
 	void Horizontal();
 
 	inline RECT GetRect() { return rc; };
+	inline bool GetDie() { return isDie; };
+	inline void SetDie(bool _check) { isDie = _check; };
 };
 

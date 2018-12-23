@@ -12,12 +12,12 @@ CPlayer::~CPlayer()
 
 void CPlayer::Init()
 {
-	m_fAnim.SetFrame(0, 3, 125);
+	m_fAnim.SetFrame(0, 2, 166);
 
 	m_x = 100;
 	m_y = 100;
 
-	m_rc2 = { 0, 0, 128, 128 };
+	rc = { 0, 0, 70, 150 };
 
 	
 }
@@ -26,7 +26,7 @@ void CPlayer::Update()
 {
 	m_fAnim.Frame();
 
-	m_rc2 = { m_x, m_y, m_x + 128, m_y + 128 };
+	rc = { m_x, m_y, m_x + 70, m_y + 150 };
 	
 
 	//이동
@@ -36,7 +36,7 @@ void CPlayer::Update()
 
 	if (INPUTMANAGER->PUSH_KEY('A')) {
 		m_x -= 10;
-	}
+	} 
 
 	if (INPUTMANAGER->PUSH_KEY('S')) {
 		m_y += 10;
@@ -46,23 +46,17 @@ void CPlayer::Update()
 		m_x += 10;
 	}
 
-	//충돌
-	
-
 	if (INPUTMANAGER->DOWN_KEY(' ')) {
-		BULLETMANAGER->Fire(m_x, m_y);
+		BULLET->Fire(m_x, m_y);
 	}
-	BULLETMANAGER->Update();
+	BULLET->Update();
 }
 
 void CPlayer::Render()
 {
-	IMAGE->Render(IMAGE->FindImage("RECT"), D3DXVECTOR3(m_x, m_y, 0));
+	IMAGE->Render(IMAGE->FindImage("PLAYER", m_fAnim.m_iCurFrame), D3DXVECTOR3(m_x, m_y, 0));
 	
-
-	IMAGE->Render(IMAGE->FindImage("MARIO", m_fAnim.m_iCurFrame), D3DXVECTOR3(m_x, m_y, 0));
-	
-	BULLETMANAGER->Render();
+	BULLET->Render();
 }
 
 void CPlayer::Destroy()
