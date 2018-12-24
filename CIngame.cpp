@@ -24,6 +24,8 @@ void CInGame::Update()
 }
 void CInGame::Render()
 {
+	IMAGE->Render(IMAGE->FindImage("INGAME_BACKGROUND"), D3DXVECTOR3(WINSIZEX / 2, WINSIZEY / 2, 0));
+
 	PLAYER->Render();
 	ENEMY->Render();
 }

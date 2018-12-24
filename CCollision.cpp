@@ -17,11 +17,15 @@ void CCollision::Update()
 {
 	for (auto Enemy : ENEMY->vEne)
 	{
-		for (auto Bullet : BULLETMANAGER->vBullet)
+		for (auto Bullet : BULLET->vBullet)
 		{
 			if (IsCollision(Bullet->GetRect(), Enemy->GetRect()))
 			{
-				printf("true\n");
+				Bullet->SetDie(true);
+				BULLET->Destroy();
+
+				Enemy->SetDie(true);
+				ENEMY->Destroy();
 			}
 		}
 	}

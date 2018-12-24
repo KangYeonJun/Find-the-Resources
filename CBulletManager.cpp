@@ -36,5 +36,15 @@ void CBulletManager::Render()
 
 void CBulletManager::Destroy()
 {
+	for (iter = vBullet.begin(); iter != vBullet.end();)
+	{
+		if ((*iter)->GetDie())
+		{
+			iter = vBullet.erase(iter);
+		}
+		else
+			iter++;
+	}
 
+	printf("%d\n", vBullet.size());
 }

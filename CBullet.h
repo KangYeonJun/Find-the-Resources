@@ -1,15 +1,15 @@
 #pragma once
-#include "CObj.h"
 
 class CBullet
 {
 private:
+	FRAME m_fAnim;
+
 	int m_iX, m_iY;
-	
+	bool isDie;
+	RECT rc;
 
 public:
-	RECT rc = { 0, 0, 32, 32 };
-
 	CBullet();
 	virtual ~CBullet();
 
@@ -19,4 +19,6 @@ public:
 	virtual void Destroy();
 
 	inline RECT GetRect() { return rc; };
+	inline bool GetDie() { return isDie; };
+	inline void SetDie(bool _check) { isDie = _check; };
 };
